@@ -7,7 +7,8 @@ model=pickle.load(open("BA_Model.pkl","rb"))
 @app.route('/')
 def index():
     return render_template('index.html')
-
+ 
+ 
 
 @app.route('/predict',methods=["POST"])
 def predict():
