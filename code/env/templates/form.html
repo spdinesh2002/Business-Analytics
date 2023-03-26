@@ -10,7 +10,7 @@
 
         }
         body {
-            background: url("p19.jpg");
+            background: url("/static/p19.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -83,7 +83,7 @@
         <div class="main">
             <div class="register">
                 <h2>Business Analytics</h2>
-                <form id="register" method="post" action="result.html">
+                <form id="register" method="post" action="{{ url_for('predict')}}">
                     <label>Revenue</label><br><br>
                             <input type="text"  id="ip2" name="Revenue"><br><br>
                             <label>Earnings</label><br><br>
@@ -98,7 +98,11 @@
                             <input type="text" id="ip2" name="earningsPerShare"><br><br>
                             <input type="submit" value="submit" name="submit" id="submit"><br>
                                
-                            
+                    <h3>
+                        {{
+                            Result
+                        }}
+                    </h3>        
                 </form>
             </div>
         </div>

@@ -1,0 +1,14 @@
+<form method="post" action="{{ url_for('predict')}}">
+Revenue <br><input type="text" name="Revenue" required><br><br>
+Earnings<br><input type="text" name="Earnings" required><br><br>
+Stock Price<br><input type="text" name="stockPrice" required><br><br>
+Total Shares<br><input type="text" name="totalShares" required><br><br>
+Annual Sales<br><input type="text" name="annualSales" required><br><br>
+Earnings Per Share<br><input type="text" name="earningsPerShare" required><br><br>
+<input type="submit">
+</form>
+<h3>
+{{
+Result
+}}
+</h3>
